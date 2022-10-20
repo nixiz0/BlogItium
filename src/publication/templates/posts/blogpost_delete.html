@@ -11,8 +11,7 @@
         <form method="POST" class="txt_article">
             {% csrf_token %}
             <p style="text-decoration:underline;"> Voulez-vous supprimer {{post.title}} ? </p>
-
+            <input class="btn" type="submit" value="Supprimer">
         </form>
-        <input class="btn" type="submit" value="Supprimer">
 
 {% endblock %}
