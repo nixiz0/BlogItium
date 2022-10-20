@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title> Suppression de l'article {{post.title}} </title>
+{% endblock %}
+
+{% block main %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/post.css' %}">
+
+        <form method="POST" class="txt_article">
+            {% csrf_token %}
+            <p style="text-decoration:underline;"> Voulez-vous supprimer {{post.title}} ? </p>
+
+        </form>
+        <input class="btn" type="submit" value="Supprimer">
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title> Modifier un Article </title>
+{% endblock %}
+
+{% block main %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/post.css' %}">
+
+    <h2 style="text-decoration:underline;"> Modification d'un Article </h2>
+
+    <form method="POST" class="txt_article">
+        {% csrf_token %}
+        {{ form.as_p }}
+    </form>
+    <input class="btn" type="submit" value="Modifier">
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title> Article {{post.title}} </title>
+{% endblock %}
+
+{% block main %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/post.css' %}">
+
+    <article class="txt_article">
+        <h2> {{post.title}} </h2>
+        <p> {{post.content|safe}} </p>
+    </article>
+
+{% endblock %}

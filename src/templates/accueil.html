@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title> Accueil de BlogItium </title>
+{% endblock %}
+
+{% block main %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/head&foot.css' %}">
+
+    <img class="img_main" src="{% static 'ressources/main_img.png' %}">
+
+        <h2 style="text-decoration:underline;"> Bienvenue sur le Blog d'Initium ! </h2>
+
+        <div class="accueil_txt">
+            <h4> Technologie et Informatique sont des sujets qui sont évoqués dans nos articles ! </h4>
+            <p> Nous mettons un point d'honneur quant à la diffusion d'information vérifié et correcte. 
+                Nous souhaitons transmettre le savoir et éduquer sur les progrès technologiques, ainsi qu'expliquer leurs fonctionnements.    
+            </p>    
+        </div>
+
+{% endblock %}

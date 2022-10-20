@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(243, 251, 255);
+}
+
+header {
+    padding: 1em;
+    margin-bottom: 3em;
+    text-align: center;
+    font-size: 1em;
+    background-color: rgb(229, 245, 255);
+}
+
+.nav_txt {
+    padding: 0.5em;
+    color:black;
+    font-weight: 600;
+}
+
+.main_content {
+    text-align: center;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+footer {
+    margin-top: 7em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+/* Page Accueil */
+.img_main {
+    border-radius: 8%;
+    width: 14em;
+    height: auto;
+}
+
+.accueil_txt {
+    font-size: 1em;
+}
+
+
+@media (min-width:680px) {
+
+    header {
+        font-size: 1.3em;
+    }
+
+    footer {
+        margin-top: 5em;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+
+    .main_content {
+        font-size: 1.5em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    
+    /* Page Accueil */
+    .img_main {
+        width: 15em;
+        height: auto;
+    }
+
+    .accueil_txt {
+        font-size: 1.1em;
+    }
+    
+
+}
+
+@media (min-width:1000px) {
+
+    header {
+        font-size: 1.8em;
+    }
+
+    footer {
+        margin-top: 5em;
+        padding: 1em;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        text-align: center;
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+
+    .main_content {
+        font-size: 1.8em;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    /* Page Accueil */
+    .img_main {
+        width: 18em;
+        height: auto;
+    }
+
+    .accueil_txt {
+        font-size: 1.3em;
+    }
+    
+}
